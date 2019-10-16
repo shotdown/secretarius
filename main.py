@@ -15,6 +15,8 @@ def send_text(message):
         bot.send_message(message.chat.id, 'Прощай, создатель')
     elif message.text.lower() == 'я тебя люблю':
         bot.send_sticker(message.chat.id, 'CAADAgADZgkAAnlc4gmfCor5YbYYRAI')
+    elif message.text.lower() == 'картинка':
+        bot.send_photo(message.chat.id, 'https://sun6-16.userapi.com/c851428/v851428032/1ebab9/zWJ7BKgG-6w.jpg')
 
 @bot.message_handler(content_types=['sticker'])
 def sticker_id(message):
