@@ -19,8 +19,7 @@ def send_text(message):
         bot.send_message(message.chat.id, 'Гудбай')
    
     elif message.text.lower() == 'новости': 
-      for i in range (len(data.contents)):
-                    
+      for i in range (len(data.contents)):           
          bot.send_message(message.chat.id, l[i])
         
 

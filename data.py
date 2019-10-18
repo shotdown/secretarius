@@ -19,7 +19,3 @@ def newsLinks():
         links.append(link)
 
     return links
-    
-
- 
- 
